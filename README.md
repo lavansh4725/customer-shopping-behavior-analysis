@@ -1,2 +1,261 @@
-# customer-shopping-behavior-analysis
-End-to-end customer shopping behavior analysis using Python, SQL &amp; Power BI to uncover customer segments, purchasing patterns, product performance, and insights for improving retention and revenue.
+# Customer Shopping Behavior Analysis
+
+## 📌 Project Overview
+
+This project analyzes customer shopping behavior to understand purchasing patterns, customer segments, product performance, and factors associated with customer spending and loyalty.
+
+The analysis follows an end-to-end data analytics workflow using **Python, SQL, and Power BI**. Raw customer data is cleaned and transformed using Python, analyzed through SQL to answer key business questions, and presented through an interactive Power BI dashboard.
+
+The overall objective is to transform customer shopping data into actionable insights that can help the business improve **customer targeting, retention, promotional strategies, product decisions, and revenue growth**.
+
+---
+
+## 🎯 Business Problem
+
+The business needs to develop a deeper understanding of its customers’ shopping behavior in order to identify the factors that influence purchasing decisions, customer spending, and repeat purchasing behavior.
+
+With customer data spanning demographics, purchase history, product categories, discounts, subscriptions, shipping preferences, and product ratings, there is an opportunity to uncover meaningful patterns that can support better business decisions.
+
+The objective of this project is to analyze customer shopping behavior to identify **high-value and loyal customer segments, understand purchasing and product trends across demographics and categories, and evaluate how factors such as discounts, subscriptions, shipping preferences, and product ratings relate to customer spending and purchasing behavior**.
+
+The analysis aims to answer questions such as:
+
+* Which customer segments contribute the most to overall revenue and spending?
+* Which products and categories are most frequently purchased?
+* How does customer spending differ across demographic groups?
+* Do subscribed customers spend more than non-subscribers?
+* How do discounts relate to customer purchase amounts and product demand?
+* What proportion of customers can be classified as New, Returning, or Loyal?
+* Are repeat customers more likely to subscribe?
+* How does shipping preference relate to purchasing behavior?
+* Which products receive the highest customer ratings?
+* Which products have the highest proportion of discounted purchases?
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool                 | Purpose                                                                      |
+| -------------------- | ---------------------------------------------------------------------------- |
+| **Python**           | Data cleaning, transformation, feature engineering, and exploratory analysis |
+| **Pandas**           | Data manipulation and preprocessing                                          |
+| **NumPy**            | Numerical operations                                                         |
+| **SQL / MySQL**      | Business analysis, aggregation, segmentation, and insight extraction         |
+| **Power BI**         | Interactive dashboard and data visualization                                 |
+| **Jupyter Notebook** | Python-based analysis and documentation                                      |
+
+---
+
+## 📂 Project Structure
+
+```text
+customer-shopping-behavior-analysis/
+│
+├── data/
+│   └── customer_shopping_behavior.csv
+│
+├── python/
+│   └── customer_shopping_behavior_analysis.ipynb
+│
+├── sql/
+│   └── customer_behavior_analysis.sql
+│
+├── powerbi/
+│   └── customer_behavior_dashboard.pbix
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🔄 Project Workflow
+
+```text
+Raw Customer Data
+       ↓
+Data Cleaning & Transformation
+       ↓
+Python Analysis
+       ↓
+SQL Business Analysis
+       ↓
+Power BI Dashboard
+       ↓
+Business Insights & Recommendations
+```
+
+---
+
+## 🐍 1. Data Preparation & Transformation — Python
+
+The raw customer shopping dataset was first prepared for analysis using Python.
+
+The data preparation process included:
+
+* Loading and inspecting the dataset
+* Checking the dataset structure and data types
+* Identifying missing values
+* Handling missing **Review Rating** values using category-level median imputation
+* Standardizing column names
+* Creating an **Age Group** feature
+* Creating a **Purchase Frequency in Days** feature from the existing purchase-frequency information
+* Removing the **Promo Code Used** column because it duplicated the information represented by **Discount Applied**
+* Preparing the cleaned dataset for SQL-based analysis
+
+The resulting dataset provides a structured foundation for further analysis and visualization.
+
+---
+
+## 🗄️ 2. SQL Business Analysis
+
+The cleaned customer data was loaded into a MySQL database and analyzed using SQL.
+
+The analysis focused on several business areas:
+
+### Revenue Analysis
+
+* Compared total revenue generated by male and female customers.
+* Analyzed revenue contribution across different age groups.
+
+### Customer Spending & Discounts
+
+* Identified customers who used discounts but still spent above the overall average purchase amount.
+* Identified products with the highest percentage of purchases involving discounts.
+
+### Product & Category Analysis
+
+* Identified products with the highest average review ratings.
+* Identified the top three most purchased products within each category.
+
+### Subscription Analysis
+
+* Compared average spending and total revenue between subscribers and non-subscribers.
+* Examined subscription behavior among repeat buyers.
+
+### Customer Segmentation
+
+Customers were segmented based on their number of previous purchases:
+
+* **New:** 0–1 previous purchases
+* **Returning:** 2–10 previous purchases
+* **Loyal:** More than 10 previous purchases
+
+This segmentation was used to understand the distribution of the customer base and identify opportunities for customer retention and loyalty strategies.
+
+### Shipping Analysis
+
+The analysis also compared average purchase amounts between:
+
+* Standard Shipping
+* Express Shipping
+
+---
+
+## 📊 3. Power BI Dashboard
+
+The cleaned and analyzed data was used to create an interactive Power BI dashboard.
+
+The dashboard provides an overview of customer shopping behavior through key performance indicators and visualizations.
+
+### Key KPIs
+
+* **Number of Customers**
+* **Average Purchase Amount**
+* **Average Review Rating**
+
+### Dashboard Analysis Areas
+
+The dashboard enables users to explore:
+
+* Revenue and sales across different age groups
+* Revenue and sales by product category
+* Customer distribution by subscription status
+* Customer behavior across different demographic groups
+* Shipping preferences
+* Category-level performance
+* Subscription-related purchasing patterns
+
+Interactive filters allow stakeholders to explore the data based on dimensions such as:
+
+* Shipping Type
+* Subscription Status
+* Gender
+* Category
+
+---
+
+## 💡 Key Business Insights
+
+The analysis is designed to help identify:
+
+* High-value customer segments contributing significantly to revenue
+* Differences in purchasing behavior across demographic groups
+* Products and categories with strong customer demand
+* Products receiving strong customer ratings
+* The relationship between discounts and customer spending
+* Differences in spending behavior between subscribers and non-subscribers
+* The distribution of New, Returning, and Loyal customers
+* Subscription patterns among repeat purchasers
+* Differences in average spending based on shipping preferences
+
+These insights can support more targeted and data-driven business decisions.
+
+---
+
+## 📈 Business Recommendations
+
+Based on the analysis, the business can consider the following strategic areas:
+
+### 1. Strengthen Customer Retention
+
+Use the New, Returning, and Loyal customer segmentation to develop differentiated engagement strategies and encourage customers to progress toward higher-value segments.
+
+### 2. Optimize Promotional Strategies
+
+Identify products and customer groups that respond well to discounts while monitoring whether promotions are associated with higher purchase values.
+
+### 3. Focus on High-Performing Products
+
+Prioritize products and categories with strong purchase volumes and customer ratings when planning product assortment, promotions, and inventory decisions.
+
+### 4. Evaluate Subscription Programs
+
+Use the comparison between subscribers and non-subscribers, along with repeat-buyer behavior, to evaluate opportunities for strengthening subscription adoption and customer loyalty.
+
+### 5. Improve Customer Targeting
+
+Use demographic and behavioral insights to develop more targeted marketing strategies rather than applying the same approach across the entire customer base.
+
+### 6. Use Customer Feedback
+
+Product review ratings can help identify products that are performing well from a customer satisfaction perspective and can be considered alongside purchase volume when making product decisions.
+
+---
+
+## 📁 Deliverables
+
+This repository contains:
+
+* **Python Notebook** — Data cleaning, transformation, and analysis
+* **SQL Script** — Business analysis queries
+* **Power BI Dashboard** — Interactive visualization and reporting
+* **Dataset** — Customer shopping behavior data
+* **README** — Project documentation
+
+---
+
+## 🚀 Project Outcome
+
+This project demonstrates an end-to-end approach to solving a business problem using data analytics.
+
+By combining **Python for data preparation, SQL for business analysis, and Power BI for visualization**, the project converts raw customer shopping data into structured insights that can support decisions related to **customer segmentation, retention, marketing, promotions, product performance, and revenue growth**.
+
+---
+
+## 👤 Author
+
+**Lavansh Jindal**
+
+Data Analytics Project
+**Python | SQL | Power BI**
