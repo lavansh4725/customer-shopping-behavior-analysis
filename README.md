@@ -257,5 +257,7 @@ By combining **Python for data preparation, SQL for business analysis, and Power
 
 **Lavansh Jindal**
 
+
 Data Analytics Project
+
 **Python | SQL | Power BI**
