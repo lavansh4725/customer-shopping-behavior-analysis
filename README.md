@@ -165,12 +165,13 @@ mysql -u root -p < sql/customer_behavior_analysis.sql
 ### 👨‍💻 Connect with the Author
 
 **Lavansh Jindal**  
-*Aspiring Data & AI Engineer | Full-Stack & GenAI Developer*
+*Data Analyst | Software Developer | Full-Stack Developer | Business Intelligence Analyst*
 
 [![GitHub](https://img.shields.io/badge/GitHub-lavansh4725-181717?style=flat&logo=github&logoColor=white)](https://github.com/lavansh4725)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Lavansh%20Jindal-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lavansh-jindal/)
-[![Email](https://img.shields.io/badge/Email-lavanshjindal47%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavanshjindal47@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-lavansh__0395-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/lavansh_0395/)
+[![Email](https://img.shields.io/badge/Email-lavansh4725jindal%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavansh4725jindal@gmail.com)
 
-<sub>*"Turning raw transactional data into actionable business intelligence through robust engineering and strategic analytics."*</sub>
+<sub>*"Bridging full-stack software development and data analytics — architecting resilient dimensional data warehouses, intelligent GenAI platforms, and high-impact business intelligence."*</sub>
 
 </div>
